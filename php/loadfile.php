@@ -33,7 +33,7 @@
     $smsRequest->fecha = $_POST['fecha'];
     
     $objRequest = new CurlRequest();
-    $url = "http://citrix6.calzzapato.com/infobipApi/sms/prueba/";
+    $url = "http://localhost/infobipApi/sms/prueba/";
 
     $response = $objRequest->sendPost($url,$smsRequest);
     echo $response;
